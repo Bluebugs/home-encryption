@@ -14,8 +14,8 @@
 
 		<!-- Volume definitions -->
 
-		<lclmount>/usr/sbin/mountcrypt.sh %(MNTPT) %(USER) "%(if (%OPTIONS),-o%(OPTIONS))"</lclmount>
-		<volume user="cedric"  mountpoint="/home/%(USER)"/>
+		<lclmount>/usr/sbin/mountcrypt.sh %(MNTPT) %(USER)"</lclmount>
+		<volume user="cedric" path="/home/%(USER)" mountpoint="/home/%(USER)"/>
 		<mkmountpoint enable="1" remove="true" />
 		<umount>/usr/sbin/umountcrypt.sh %(MNTPT) %(USER)</umount>
 
